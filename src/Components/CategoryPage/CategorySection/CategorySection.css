@@ -1,0 +1,519 @@
+.category-section{
+    margin: 80px 100px 80px 21px;
+}
+/* =========================================================
+   CATEGORY PAGE
+========================================================= */
+
+.category-page {
+    margin-top: 70px;
+    padding-right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    font-family: Satoshi;
+}
+
+
+/* =========================================================
+   CATEGORY HEADER
+========================================================= */
+
+.category-heading {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Satoshi;
+}
+
+.category-heading h1 {
+    font-size: 2rem;
+    margin-left: 30px;
+
+    font-family: Satoshi;
+}
+
+.spam-header-para {
+    display: flex;
+    gap: 12px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.spam-header-para p {
+    font-size: 16px;
+}
+
+.spam-header-para h2 {
+    font-size: 16px;
+}
+
+.spam2-header-para {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+}
+
+.spam-header-para img {
+    margin: 6px;
+}
+
+
+/* =========================================================
+   FILTER BUTTON
+========================================================= */
+
+.category-header-btn-filter {
+    width: 32px;
+    height: 32px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 62px;
+
+    background-color: #f0f0f0;
+
+    cursor: pointer;
+}
+
+.category-header-btn-filter img {
+    width: 13.5px;
+    height: 12.5px;
+}
+
+.category-heading .check-mark {
+    display: none;
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.products-grid {
+    display: grid;
+
+    gap: 20px;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    justify-items: center;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.category-page-btns {
+    font-family: Satoshi;
+
+    width: 110px;
+    height: 36px;
+
+    padding: 0 10px;
+
+    opacity: 1;
+
+    border-radius: 8px;
+    border: 1px solid #c0a6a6;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        background-color 0.2s ease;
+
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+
+    white-space: nowrap;
+}
+
+.category-page-btns:hover:not(:disabled) {
+    background-color: #f8f8f8;
+}
+
+.category-page-btns:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.icon-arrow {
+    display: inline-block;
+    vertical-align: middle;
+
+    color: #333;
+
+    width: 16px;
+    height: 16px;
+
+    font-size: 16px;
+
+    transition:
+        transform 0.12s ease,
+        color 0.12s ease;
+}
+
+.icon-arrow--left {
+    margin-right: 8px;
+}
+
+.icon-arrow--right {
+    margin-left: 8px;
+}
+
+
+/* =========================================================
+   PAGINATION NUMBERS
+========================================================= */
+
+.quantity-selector-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.number-selector {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    overflow: visible;
+
+    background: none;
+    border: none;
+
+    white-space: nowrap;
+}
+
+.num-btn {
+    background-color: transparent;
+
+    border: none;
+
+    color: #00000080;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.num-btn:hover:not(.active):not(.dots) {
+    background-color: #f1f5f9;
+}
+
+.num-btn.active {
+    background-color: #e2e8f0;
+
+    color: #000000;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PAGINATION DOTS
+========================================================= */
+
+.num-btn.dots {
+    cursor: default;
+
+    color: #888888;
+
+    pointer-events: none;
+
+    background-color: transparent;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   أقل من 992px
+========================================================= */
+
+@media screen and (max-width: 992px) {
+
+    .category-section{
+    margin: 51px 16px 50px;
+    }
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .category-heading {
+        width: 100%;
+
+        margin-bottom: 1.5rem;
+
+        padding: 0 16px;
+
+        gap: 8px;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .category-heading h1 {
+        font-size: 24px;
+
+        margin-left: 0;
+
+        font-family: Satoshi;
+
+        white-space: nowrap;
+    }
+
+    .spam-header-para {
+        gap: 8px;
+
+        align-items: center;
+
+        min-width: 0;
+    }
+
+    .spam-header-para h2 {
+        display: none;
+    }
+
+    .spam-header-para img {
+        display: none;
+    }
+
+    .spam-header-para p {
+        font-size: 14px;
+
+        margin: 0;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       FILTER BUTTON
+    ===================================================== */
+
+    .category-header-btn-filter {
+        display: flex;
+
+        margin-left: auto;
+
+        width: 32px;
+        height: 32px;
+
+        padding: 8px;
+
+        flex-shrink: 0;
+
+        box-sizing: border-box;
+    }
+
+    .category-header-btn-filter img {
+        width: 13.5px;
+        height: 12.5px;
+    }
+
+
+    /* =====================================================
+       PRODUCTS
+    ===================================================== */
+
+    .products-grid {
+        width: 100%;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       PAGINATION
+    ===================================================== */
+
+    .category-page {
+        width: 100%;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        padding: 0 16px;
+
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 8px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       PREVIOUS / NEXT
+    ===================================================== */
+
+    .category-page-btns {
+        width: 100px;
+        min-width: 100px;
+
+        height: 36px;
+
+        font-size: 14px;
+
+        flex-shrink: 0;
+
+        white-space: nowrap;
+
+        padding: 0 8px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       NUMBERS CONTAINER
+    ===================================================== */
+
+    .quantity-selector-container {
+        flex: 1;
+
+        min-width: 0;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        overflow: visible;
+    }
+
+
+    /* =====================================================
+       NUMBER SELECTOR
+    ===================================================== */
+
+    .number-selector {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 2px;
+
+        flex-wrap: nowrap;
+
+        white-space: nowrap;
+
+        overflow: visible;
+    }
+
+
+    /* =====================================================
+       NUMBER BUTTON
+    ===================================================== */
+
+    .num-btn {
+        width: 32px;
+        min-width: 32px;
+
+        height: 32px;
+
+        font-size: 14px;
+
+        flex-shrink: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       DOTS
+    ===================================================== */
+
+    .num-btn.dots {
+        width: 32px;
+        min-width: 32px;
+
+        height: 32px;
+
+        cursor: default;
+
+        pointer-events: none;
+    }
+
+
+    /* =====================================================
+       ARROWS
+    ===================================================== */
+
+    .icon-arrow {
+        width: 14px;
+        height: 14px;
+
+        font-size: 14px;
+    }
+
+    .icon-arrow--left {
+        margin-right: 5px;
+    }
+
+    .icon-arrow--right {
+        margin-left: 5px;
+    }
+}

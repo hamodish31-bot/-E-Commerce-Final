@@ -1,0 +1,74 @@
+/* =========================================
+   FIRST SECTION
+========================================= */
+
+.first-section {
+display: flex;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+
+/* =========================================
+   DESKTOP FILTER
+========================================= */
+
+.desktop-filter {
+    display: block;
+
+    flex: 0 0 295px;
+
+    width: 295px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CATEGORY SECTION
+   يأخذ باقي المساحة
+========================================= */
+
+.first-section > .category-section {
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MOBILE / TABLET
+   أقل من 992px
+========================================= */
+
+@media screen and (max-width: 991px) {
+
+    .first-section {
+        display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    /* إخفاء فلتر Desktop */
+
+    .desktop-filter {
+        display: none !important;
+    }
+
+
+    /* CategorySection يأخذ العرض كامل */
+
+    .first-section > .category-section {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}

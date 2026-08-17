@@ -1,0 +1,21 @@
+.product-detail-section{
+    display: flex;
+  margin-top: 82px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+@media screen and (max-width:992px){
+
+.product-detail-section{
+    display: flex;
+    flex-direction: column;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+
+
+}

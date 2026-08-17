@@ -1,0 +1,322 @@
+.navbar {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.navbar .navbar-resbon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.navbar .navbar-parag {
+  width: 100%;
+  height: 38px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.navbar .navbar-parag p {
+  width: fit-content;
+  height: 19px;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.navbar .exit-button {
+  display: flex;
+  position: absolute;
+  right: 40px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.navbar .navbar-parag .navbar-link {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #ffffff;
+}
+.navbar .navbar-header {
+  width: 100%;
+  padding: 24px 100px;
+}
+.navbar .navbar-boss {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 48px;
+}
+/* SHOP.CO */
+.navbar .navbar-logo {
+  width: fit-content;
+  font-family: Integral CF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.navbar .navbar-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 13px 0px;
+  height: 22px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.navbar .navbar-list li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.navbar .navbar-list a,
+.navbar .navbar-list label {
+  white-space: nowrap;
+}
+
+.navbar .navbar-default {
+  display: none;
+}
+.navbar .navbar-searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 62px;
+  width: 46.532%;
+  height: 48px;
+  border: none;
+  gap: 12px;
+}
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  z-index: 20;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background: #f3f4f6;
+}
+.navbar .navbar-searchbox img {
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+.navbar .navbar-search {
+  padding: 12px 15px 14px 52px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 62px;
+  background-color: #f0f0f0;
+}
+.navbar .navbar-icon .search-img {
+  display: none;
+}
+.navbar .navbar-searchbox .search-close-btn {
+  display: none;
+}
+#options {
+  border: none;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  text-align: center;
+  color: rgb(59, 56, 56);
+  font-family: Satoshi;
+  cursor: pointer;
+}
+.navbar .navbar-icon {
+  width: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-icon img {
+  width: 24px;
+  height: 24px;
+}
+.navbar .navbar-line {
+  position: absolute;
+  width: 86%;
+  height: 0px;
+  left: 100px;
+  top: 134px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-direction {
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  padding: 12px 0;
+  margin-left: 100px;
+  width: fit-content;
+}
+.navbar-direction p {
+  font-family: Satoshi;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+.navbar-direction .sep {
+  margin: 0 8px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar .navbar-parag {
+    width: 100%;
+    height: 34px;
+    background-color: black;
+    padding: 9px 44.5px;
+  }
+  .navbar .navbar-parag p {
+    height: 16px;
+    font-size: 12px;
+  }
+  .navbar .navbar-parag .navbar-link {
+    font-size: 12px;
+  }
+
+  .navbar .navbar-header {
+    width: 100%;
+    padding: 20px 16px;
+  }
+  .navbar .navbar-boss {
+    height: 24px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .navbar-boss .navbar-logo-menu {
+    display: flex;
+  }
+  .navbar .navbar-logo {
+    width: fit-content;
+    font-size: 25.2px;
+    margin: 0px 96px 0px 0px;
+  }
+  .navbar .navbar-icon {
+    width: 26.5%;
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+  }
+  .navbar .navbar-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar .navbar-line {
+    position: absolute;
+    width: 91.8%;
+    height: 0px;
+    left: 16px;
+    top: 98px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navbar .navbar-list {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    gap: 30px;
+    height: auto !important;
+    z-index: 100;
+  }
+  .navbar .navbar-resbon {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-list.active {
+    display: flex !important;
+  }
+  .navbar .navbar-searchbox {
+    display: none;
+  }
+  .navbar .navbar-header .search-img {
+    display: inline-block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  .navbar-searchbox.search-active {
+    display: flex !important;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 97%;
+    height: 30%;
+    background-color: rgba(117, 106, 106, 0.79);
+    z-index: 1000;
+    gap: 10px;
+  }
+
+  .navbar .navbar-searchbox .search-close-btn {
+    display: block !important;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(138, 114, 118);
+    padding: 0 5px;
+    position: absolute;
+    right: 10px;
+  }
+}

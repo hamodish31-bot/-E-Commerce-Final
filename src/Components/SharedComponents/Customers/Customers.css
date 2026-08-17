@@ -1,0 +1,66 @@
+.customers{
+    margin: 80px 100px 170px 100px;
+}
+.customers .customers-top{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.customers .customers-top h1{
+    font-family: Integral;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+}
+.customers-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.customers-cards::-webkit-scrollbar {
+    display: none;
+}
+.controls{
+    display: flex;
+    gap: 18.62px;
+}
+.controls .control-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+.controls img{
+    width: 15.76px;
+    height: 18.75px;
+}
+.slider-wrapper{
+        width: 100%;
+}
+.control-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+@media screen and (max-width:992px){
+    .customers{
+    margin: 50px 16px 184.81px 16px;
+    }
+    .customers .customers-top{
+    margin-bottom: 40px;
+    }
+    .customers .customers-top h1{
+    font-size: 32px;
+    line-height: 36px;
+    }
+
+}

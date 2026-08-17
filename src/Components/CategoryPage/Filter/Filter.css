@@ -1,0 +1,812 @@
+/* =========================================
+   FILTER
+========================================= */
+
+.filter {
+margin-left: 100px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #00000012;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-family: Satoshi, sans-serif;
+  margin-top: 70px;
+  width: fit-content;
+}
+
+
+/* =========================================
+   FILTER HEADER
+========================================= */
+
+.filter .filter-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter .filter-head h2 {
+    font-family: Satoshi, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.filter-close-btn {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HR
+========================================= */
+
+.filter hr {
+    width: 100%;
+    height: 1px;
+
+    border: none;
+
+    background-color: #00000012;
+}
+
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+.filter-category {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.category-head h3 {
+    font-family: Satoshi, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CLOTHS / CATEGORY OPTIONS
+========================================= */
+
+.cloths-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cloths-filter button {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: 40px;
+
+    padding: 10px 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: transparent;
+
+    font-family: Satoshi, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.cloths-filter button:hover {
+    background-color: #f3f3f3;
+}
+
+.cloths-filter button.selected-filter {
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.filter .price {
+    width: 100%;
+}
+
+.filter .price .price-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.filter .price .price-head h3 {
+    font-family: Satoshi, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.filter .price .price-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.filter .price .price-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Satoshi, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   RC SLIDER
+========================================= */
+
+.rc-slider {
+    margin-top: 5px;
+}
+
+.rc-slider-track {
+    background-color: #111 !important;
+}
+
+.rc-slider-rail {
+    background-color: #ccc !important;
+}
+
+.rc-slider-handle {
+    width: 20px !important;
+    height: 20px !important;
+
+    margin-top: -8px !important;
+
+    background-color: #111 !important;
+
+    border: 2px solid #111 !important;
+
+    opacity: 1 !important;
+}
+
+.rc-slider-handle:hover,
+.rc-slider-handle:focus,
+.rc-slider-handle:active {
+    border-color: #111 !important;
+    box-shadow: none !important;
+}
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+.colors {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colors .colors-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.colors .colors-head h3 {
+    font-family: Satoshi, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.colors .colors-body {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.colors .color-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.colors .color-input {
+    display: none;
+}
+
+
+/* =========================================
+   COLOR CIRCLE
+========================================= */
+
+.colors .circle {
+    position: relative;
+
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    border: 1px solid #aaa;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.colors .circle:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   SELECTED COLOR
+========================================= */
+
+.colors .color-input:checked + .circle {
+    box-shadow:
+        0 0 0 3px #fff,
+        0 0 0 5px #000;
+}
+
+
+/* =========================================
+   COLOR CHECK MARK
+========================================= */
+
+.colors .circle::after {
+    content: "";
+
+    position: absolute;
+
+    display: none;
+
+    left: 11px;
+    top: 7px;
+
+    width: 6px;
+    height: 12px;
+
+    border: solid white;
+
+    border-width:
+        0
+        2.5px
+        2.5px
+        0;
+
+    transform: rotate(45deg);
+}
+
+.colors .color-input:checked + .circle::after {
+    display: block;
+}
+
+
+/* =========================================
+   COLOR BACKGROUNDS
+========================================= */
+
+.colors .circle.black {
+    background-color: #000;
+}
+
+.colors .circle.white {
+    background-color: #fff;
+}
+
+.colors .circle.grey {
+    background-color: #808080;
+}
+
+.colors .circle.blue {
+    background-color: #2563eb;
+}
+
+.colors .circle.navy {
+    background-color: #172554;
+}
+
+.colors .circle.green {
+    background-color: #16a34a;
+}
+
+.colors .circle.red {
+    background-color: #dc2626;
+}
+
+.colors .circle.yellow {
+    background-color: #facc15;
+}
+
+.colors .circle.orange {
+    background-color: #f97316;
+}
+
+.colors .circle.pink {
+    background-color: #ec4899;
+}
+
+.colors .circle.purple {
+    background-color: #6d28d9;
+}
+
+.colors .circle.aqua {
+    background-color: #22d3ee;
+}
+
+.colors .circle.khaki {
+    background-color: #b8a76a;
+}
+
+.colors .circle.slate {
+    background-color: #64748b;
+}
+
+.colors .circle.charcoal {
+    background-color: #36454f;
+}
+
+.colors .circle.dark-blue {
+    background-color: #1e3a8a;
+}
+
+
+/* =========================================
+   SIZE
+========================================= */
+
+.filter .filter-size {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter .filter-size .size-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.filter .filter-size .size-head h3 {
+    font-family: Satoshi, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SIZE BODY
+   زرين في كل سطر
+========================================= */
+
+.filter .filter-size .size-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   SIZE BUTTON
+========================================= */
+
+.filter .filter-size .size-body button {
+    flex: 0 0 calc(50% - 4px);
+
+    min-width: 0;
+    min-height: 39px;
+
+    padding: 10px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 62px;
+
+    background-color: #f0f0f0;
+    color: #000;
+
+    font-family: Satoshi, sans-serif;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.filter .filter-size .size-body button:hover {
+    background-color: #ddd;
+}
+
+.filter .filter-size .size-body button:active {
+    transform: scale(0.97);
+}
+
+.filter .filter-size .size-body button span {
+    font-family: Satoshi, sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ACTIVE SIZE
+========================================= */
+
+.filter .filter-size .size-body button.active-size {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* =========================================
+   DRESS STYLE
+========================================= */
+
+.filter .filter-dress-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter .filter-dress-style .dress-style-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.filter .filter-dress-style .dress-style-head h3 {
+    font-family: Satoshi, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.filter .filter-dress-style .dress-style-body {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   DRESS STYLE BUTTON
+========================================= */
+
+.filter .filter-dress-style .dress-style-body button {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 8px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.filter .filter-dress-style .dress-style-body button:hover {
+    background-color: #f5f5f5;
+}
+
+.filter .filter-dress-style .dress-style-body button span {
+    font-family: Satoshi, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 100%;
+}
+
+
+/* =========================================
+   ACTIVE DRESS STYLE
+========================================= */
+
+.filter .filter-dress-style .dress-style-body button.active-dress-style {
+    background-color: #f0f0f0;
+}
+
+.filter .filter-dress-style .dress-style-body button.active-dress-style span {
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FILTER ACTIONS
+========================================= */
+
+.filter-actions {
+    width: 100%;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.filter-actions button {
+    flex: 1;
+
+    min-height: 45px;
+
+    border-radius: 60px;
+
+    font-family: Satoshi, sans-serif;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.filter-actions button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   APPLY
+========================================= */
+
+.apply-filter-btn {
+    border: none;
+
+    background-color: #000;
+
+    color: #fff;
+}
+
+.apply-filter-btn:hover {
+    background-color: #222;
+}
+
+
+/* =========================================
+   MOBILE
+   أقل من 992px
+========================================= */
+
+@media screen and (max-width: 991px) {
+
+    .filter {
+        width: calc(100% - 32px);
+
+        max-width: 500px;
+
+        margin: 20px auto;
+
+        padding: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        position: relative;
+
+        background-color: #fff;
+
+        border: 1px solid #00000012;
+
+        border-radius: 20px;
+
+        z-index: 100;
+    }
+
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .filter .filter-head {
+        width: 100%;
+    }
+
+    .filter .filter-head h2 {
+        font-size: 20px;
+    }
+
+
+    /* =====================================
+       CLOSE BUTTON
+    ===================================== */
+
+    .filter-close-btn {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        width: 32px;
+        height: 32px;
+
+        padding: 0;
+
+        border: none;
+
+        background: transparent;
+
+        font-size: 18px;
+
+        cursor: pointer;
+    }
+
+
+    /* =====================================
+       CATEGORY
+    ===================================== */
+
+    .cloths-filter button {
+        min-height: 42px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================
+       COLORS
+    ===================================== */
+
+    .colors .colors-body {
+        grid-template-columns: repeat(5, 1fr);
+
+        gap: 10px;
+    }
+
+    .colors .circle {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /* =====================================
+       SIZE
+    ===================================== */
+
+    .filter .filter-size .size-body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .filter .filter-size .size-body button {
+        flex: 0 0 calc(50% - 4px);
+
+        min-width: 0;
+        min-height: 36px;
+
+        padding: 9px 12px;
+
+        font-size: 14px;
+    }
+
+    .filter .filter-size .size-body button span {
+        font-size: 14px;
+    }
+
+
+    /* =====================================
+       DRESS STYLE
+    ===================================== */
+
+    .filter .filter-dress-style .dress-style-body {
+        gap: 5px;
+    }
+
+    .filter .filter-dress-style .dress-style-body button {
+        padding: 11px 8px;
+    }
+
+
+    /* =====================================
+       ACTIONS
+    ===================================== */
+
+    .filter-actions {
+        gap: 8px;
+    }
+
+    .filter-actions button {
+        min-height: 44px;
+
+        font-size: 15px;
+    }
+}

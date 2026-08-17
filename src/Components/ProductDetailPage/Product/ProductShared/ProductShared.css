@@ -1,0 +1,259 @@
+.product-rate {
+    display: flex;
+    margin-top: 14px;
+    gap: 16px;
+}
+.product-rate img {
+    gap: 7px;
+    margin-top: -4px;
+}
+.product-rate .rate-total {
+    color: #9e9e9e;
+}
+.f-o-d-price {
+    margin-top: 15px;
+}
+.final-price {
+    font-family: Satoshi;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    width: 81px;
+    height: 43px;
+    opacity: 1;
+}
+.original-price {
+    font-family: Satoshi;
+    color: rgba(0, 0, 0, 0.3) ;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    width: 81px;
+    height: 43px;
+    opacity: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: line-through;
+}
+.discount {
+    width: 72px;
+    height: 34px;
+    opacity: 1;
+    gap: 12px;
+    border-radius: 62px;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    background: rgba(255, 51, 51, 0.1);
+    font-family: Satoshi;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:  rgba(255, 51, 51, 1);
+}
+.paragraph-p3 {
+width: 100%;
+  height: 33px;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px
+}
+.hr {
+    margin-top: 24px;
+    width: 100%;
+    height: 0px;
+    border-width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+.box-color {
+    display: flex;
+    align-items: center;
+}
+.color-button {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid transparent;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+.color-button.color-active {
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.08);
+}
+.color-check {
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+    color: #fff;
+    font-size: 14px;
+}
+h4 {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:  rgba(0, 0, 0, 0.6);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.but-size {
+    display: flex;
+    gap: 12px;
+    width: 420px;
+    height: 46px;
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.but-size button {
+    width: 86px;
+    height: 46px;
+    border-radius: 62px;
+    border: 1px solid #e0e0e0;
+    background: rgba(240, 240, 240, 1);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.but-size button.active {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+@media screen and (max-width: 992px) {
+.product-rate {
+    margin-top: 1.8vw;
+}
+.product-rate img {
+    gap: 0.8vw;
+}
+.f-o-d-price {
+    margin-top: 1.8vw;
+}
+.final-price {
+    font-size: 4.5vw;
+    width: 61px;
+    height: 32px;
+}
+.original-price {
+    font-size: 4.5vw;
+    width: 62px;
+    height: 32px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+.discount {
+    width: 12vw;
+    height: 31px;
+    border-radius: 62px;
+    padding-top: 0.8vw;
+    padding-right: 2vw;
+    padding-bottom: 0.8vw;
+    padding-left: 2vw;
+    font-size: 2.5vw;
+}
+.paragraph-p3 {
+    width: 90vw;
+    height: auto;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin-top: 3.5vw;
+}
+.hr {
+    width: 85vw;
+    margin-top: 3.5vw;
+}
+h4 {
+    font-size: 2.5vw;
+    margin-top: 3.5vw;
+    margin-bottom: 2.2vw;
+}
+.but-size {
+    gap: 1.5vw;
+    width: 90vw;
+    height: 39px;
+    font-size: 2.5vw;
+    flex-wrap: wrap;
+}
+.but-size button {
+    flex: 1;
+    min-width: 60px;
+    height: 39px;
+    font-size: 2vw;
+}
+}
+@media screen and (max-width: 390px) {
+.product-rate {
+    margin-top: 12px;
+}
+.product-rate img {
+    gap: 5.36px;
+}
+.f-o-d-price {
+    margin-top: 12px;
+}
+.final-price {
+    font-size: 24px;
+    width: 61px;
+    height: 32px;
+}
+.original-price {
+    font-size: 24px;
+    width: 62px;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.discount {
+    width: 62px;
+    height: 31px;
+    border-radius: 62px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+.paragraph-p3 {
+    width: 358px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.hr {
+    width: 365px;
+}
+h4 {
+    font-size: 14px;
+}
+.but-size {
+    gap: 8px;
+    width: 353px;
+    height: 39px;
+    font-size: 14px;
+}
+.but-size button {
+    width: 79px;
+    height: 39px;
+}
+}

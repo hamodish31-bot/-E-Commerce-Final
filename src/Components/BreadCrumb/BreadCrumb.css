@@ -1,0 +1,39 @@
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: Satoshi;
+    line-height: 100%;
+    font-weight: 400px;
+    color: #00000099;
+    margin-bottom: 36px;
+    margin-top: 24px;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: #00000099;
+}
+.breadcrumb-item a:hover{
+    color: #000000;
+}
+.separator{
+
+    margin: 0px 9px;
+    color: #00000099;
+}
+.breadcrumb-item .current{
+    color: #000000;
+}
+@media screen and (max-width:992px){
+.breadcrumb{
+    width: 60%;
+    font-size: 14px;
+    font-family: Satoshi;
+    margin: 20px 16px;
+}
+.separator{
+
+    margin: 0px 8px;
+    color: #00000099;
+}
+}

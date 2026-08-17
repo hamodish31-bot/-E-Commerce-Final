@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(/public/fonts/Satoshi-Regular.otf);
+}
+.heroText {
+    margin-top: 62px;
+    margin-left: 6%;
+    position: relative;
+}
+.heroText:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -35%;
+    top: 19%;
+    height: 60px;
+    width: 2px;
+    background:  rgba(0, 0, 0, 0.1);
+}
+.heroText h3 {
+    width: 100px;
+    height: 54px;
+    opacity: 1;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+}
+.heroText p {
+    width: 120px;
+    font-size: 12px;
+    font-family: Satoshi;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width:992px) {
+    .heroText {
+    margin-top: 20px;
+    margin-left: 29%;
+}
+.heroText:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 1%;
+    top: -1%;
+    height: 60px;
+    width: 2px;
+    background:  rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+}
+.heroText h3 {
+    width: 64px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: space-between;
+    line-height: 100%;
+}
+.heroText p {
+    width: 107px;
+    height: 22px;
+    font-size: 11px;
+    line-height: 22px;
+}
+.heroText.last-itme {
+    margin-left: 80%;
+    display: flex;
+    flex-direction: column;
+}
+}

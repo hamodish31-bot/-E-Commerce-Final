@@ -1,0 +1,155 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-bottom: 1px solid #0000001A;
+}
+
+
+.cart-item-img {
+    width: 124px;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 8.66px;
+}
+
+
+
+.cart-item-info h2 {
+    font-family: "Satoshi";
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.cart-item-info p {
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #000000;
+;
+}
+
+.cart-item-info h3 {
+    font-family: "Satoshi";
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.cart-item-info-actions{
+    display: flex;
+    /* gap: 75px; */
+    justify-content: space-between;
+    flex: 1;
+}
+.cart-item-actions {
+    /* height: 124px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 56px; */
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.delete-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: #FF3333;
+    font-size: 24px;
+
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #F0F0F0;
+    border-radius: 62px;
+    padding: 12px 20px;
+}
+
+.quantity button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity span {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .cart-item {
+        padding: 12px 0;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .cart-item-img {
+        width: 83px;
+        height: 83px;
+    }
+
+    .cart-item-info-actions {
+     display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    }
+
+    .cart-item-info {
+        min-width: 0;
+    }
+
+    .cart-item-info h2 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    white-space: nowrap;
+    }
+
+    .cart-item-info p {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    .cart-item-info h3 {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    .cart-item-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 35px;
+    }
+
+    .delete-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+
+    .quantity {
+        padding: 7px 12px;
+        gap: 14px;
+    }
+
+    .quantity button {
+        font-size: 16px;
+    }
+
+    .quantity span {
+        font-size: 12px;
+    }
+}

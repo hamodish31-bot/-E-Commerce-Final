@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.home-browse {
+    margin: 80px 101px 108px 100px;
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    padding-top: 70px;
+    padding-bottom: 76px;
+
+}
+.home-browse h1 {
+    font-family: Integral CF;
+    font-size: 48px;
+    font-style: Bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.home-browse .browse-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 64px;
+    padding-left: 64px;
+    column-gap: 20px;
+    row-gap: 17px;
+    margin-top: 64px;
+}
+
+.home-browse .browse-cards>div:nth-child(1) {
+    grid-column: span 1;
+}
+
+.home-browse .browse-cards>div:nth-child(2) {
+    grid-column: span 2;
+}
+
+.home-browse .browse-cards>div:nth-child(3) {
+    grid-column: span 2;
+}
+
+.home-browse .browse-cards>div:nth-child(4) {
+    grid-column: span 1;
+}
+
+@media screen and (max-width:992px) {
+    .home-browse {
+        margin: 50px 16px 50px 16px;
+        padding-top: 40px;
+        padding-bottom: 27px;
+    }
+
+
+
+    .home-browse .browse-cards {
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-bottom: 50px;
+        margin-top: 28px;
+
+    }
+
+    .home-browse .browse-cards>div:nth-child(1) {
+        grid-column: span 1;
+    }
+
+    .home-browse .browse-cards>div:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .home-browse .browse-cards>div:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .home-browse .browse-cards>div:nth-child(4) {
+        grid-column: span 1;
+    }
+
+    .home-browse h1 {
+        font-family: Integral CF;
+        font-size: 32px;
+        font-style: Bold;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        color: #000000;
+        margin-left: 56px;
+        margin-right: 56px;
+    
+    }
+}
+@font-face {
+    font-family: Satoshie;
+    src: url(/public/Fonts/Satoshi-Bold.otf);
+}
+@font-face {
+    font-family: Integral CF;
+    src: url(/public/Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}

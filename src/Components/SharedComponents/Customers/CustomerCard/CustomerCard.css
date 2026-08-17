@@ -1,0 +1,64 @@
+.comment-card{
+    flex: 0 0 calc((100% - 40px) / 3);
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: 28px 32px;
+    border: 1px solid #0000001A;
+    box-sizing: border-box;
+}
+.comment-card .stars{
+    display: flex;
+    gap : 6.49px;
+    margin-bottom: 15px;
+}
+.comment-card .customer-name{
+    display: flex;
+    align-items: center;
+    gap: 6.25px;
+    margin-bottom: 12px;
+}
+.comment-card .customer-name .img2{
+    width: 19.5px;
+    height: 19.5px;
+}
+.comment-card .customer-name h2{
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+}
+.comment-card .the-comment{
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #00000099;
+}
+
+@media screen and (max-width:992px) {
+    .comment-card{
+    flex: 0 0 100%;
+    flex-shrink: 0;
+    padding:24px;
+}
+    .comment-card .stars{
+    gap : 5.51px;
+    margin-bottom: 12px;
+    }
+    .comment-card .customer-name{
+    gap: 5.78px;
+    margin-bottom: 9.78px;
+    }
+    .comment-card .customer-name .img2{
+    width: 15.44px;
+    height: 15.44px;
+    }
+    .comment-card .customer-name h2{
+    font-size: 16px;
+    }
+    .comment-card .the-comment{
+    font-size: 14px;
+    line-height: 20px;
+    }
+} 

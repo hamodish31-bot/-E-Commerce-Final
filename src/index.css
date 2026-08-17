@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Integral CF ;
+    src: url(/fonts/Integral\ CF.ttf);
+}
+@font-face {
+    font-family:Satoshi ;
+    src: url(/fonts/Satoshi-Regular.otf);
+}
